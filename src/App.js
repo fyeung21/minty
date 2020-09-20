@@ -5,6 +5,8 @@ const App = () => {
 
   const [firstName, setFirstName] = useState('');
   const [secondName, setSecondName] = useState('');
+  const [firstToggle, setFirstToggle] = useState(false);
+  const [secondToggle, setSecondToggle] = useState(false);
 
   const adjectives = ["pinky", "yellow", "lemony", "safe", "real", "praying"];
   const nouns = ["cat", "goat", "whale", "pen", "spoon", "shrimp"];
@@ -17,19 +19,42 @@ const App = () => {
     const newAdjective = randomAdjectives[0];
     const newNoun = randomNouns[0];
 
-    setFirstName(newAdjective);
-    setSecondName(newNoun);
+    if (!firstToggle) {
+      setFirstName(newAdjective);
+    } else {
+      setFirstName(firstName);
+    };
+
+    if (!secondToggle) {
+      setSecondName(newNoun);
+    } else {
+      setSecondName(secondName);
+    }
   };
+
+  const firstLock = () => {
+    setFirstToggle(!firstToggle);
+  }
+
+  const secondLock = () => {
+    setSecondToggle(!secondToggle);
+  }
 
   return (
     <div className="App">
       <h1>minty fresh names</h1>
 
-      <p>{firstName + secondName}</p>
+      <div onClick={firstLock}>
+        <p>{firstName}</p>
+      </div>
+
+      <div onClick={secondLock}>
+        <p>{secondName}</p>
+      </div>
 
       <button onClick={generateName}>
         Generate a new name!
-        </button>
+      </button>
 
     </div>
   );
