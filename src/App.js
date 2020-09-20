@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./reset.css";
+import "./App.css";
+import { SiteBkg } from "./globalyStyles";
 
 const App = () => {
 
@@ -41,7 +43,7 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <SiteBkg>
       <h1>minty fresh names</h1>
 
       <div onClick={firstLock}>
@@ -56,7 +58,7 @@ const App = () => {
         Generate a new name!
       </button>
 
-    </div>
+    </SiteBkg>
   );
 }
 
