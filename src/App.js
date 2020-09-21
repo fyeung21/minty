@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./reset.css";
 import "./App.css";
-import { SiteBkg } from "./globalyStyles";
+import { SiteBkg } from "./globalStyles";
 import Logo from "./components/Logo";
 
 const App = () => {

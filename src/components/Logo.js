@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../globalyStyles";
+import { theme } from "../globalStyles";
 
 export const LogoCont = styled.div`
     margin: 0.25rem 1rem;
