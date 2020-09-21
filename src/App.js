@@ -3,6 +3,7 @@ import "./reset.css";
 import "./App.css";
 import { SiteBkg } from "./globalStyles";
 import Logo from "./components/Logo";
+import Name from "./components/Name";
 
 const App = () => {
 
@@ -48,11 +49,11 @@ const App = () => {
       <Logo />
 
       <div onClick={firstLock}>
-        <p>{firstName}</p>
+        <Name firstName={firstName} />
       </div>
 
       <div onClick={secondLock}>
-        <p>{secondName}</p>
+        <Name secondName={secondName} />
       </div>
 
       <button onClick={generateName}>
