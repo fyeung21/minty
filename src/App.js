@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./reset.css";
 import "./App.css";
 import { SiteBkg } from "./globalyStyles";
+import Logo from "./components/Logo";
 
 const App = () => {
 
@@ -44,7 +45,7 @@ const App = () => {
 
   return (
     <SiteBkg>
-      <h1>minty fresh names</h1>
+      <Logo />
 
       <div onClick={firstLock}>
         <p>{firstName}</p>

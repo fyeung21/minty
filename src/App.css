@@ -1,8 +1,8 @@
 html {
-  background-color: #282c34;
+  background-image: linear-gradient(to left bottom, #66f49e, #51e7aa, #45dab2, #46ccb5, #50bdb4);
+  background-repeat: no-repeat;
+  height: 100%;
   color: #fff;
 }
 
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;@700&display=swap");
