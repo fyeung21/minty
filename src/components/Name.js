@@ -4,18 +4,20 @@ import { theme } from "../globalStyles";
 
 export const NameCont = styled.div`
     margin: 0.25rem 1rem;
+    cursor: pointer;
 `
-export const Title = styled.p`
-    font-family: ${theme.bodyFont};
-    font-weight: 800;
-    font-size: 2rem;
+export const Text = styled.p`
     color: ${theme.bodyFontColor};
+    font-family: ${theme.bodyFont};
+    font-size: ${theme.h2FontSize};
+    font-weight: 500;
+    text-transform: capitalize;
 `
 
-const Name = ({ firstName, secondName }) => {
+const Name = ({ firstLock, secondLock, firstName, secondName }) => {
     return (
-        <NameCont>
-            <Title>{firstName || secondName}</Title>
+        <NameCont onClick={firstLock || secondLock}>
+            <Text>{firstName || secondName}</Text>
         </NameCont>
     )
 }

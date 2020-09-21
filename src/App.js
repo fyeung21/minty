@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./reset.css";
 import "./App.css";
-import { SiteBkg } from "./globalStyles";
+import { Display } from "./globalStyles";
 import Logo from "./components/Logo";
 import Name from "./components/Name";
 
@@ -45,22 +45,19 @@ const App = () => {
   }
 
   return (
-    <SiteBkg>
+    <div>
       <Logo />
 
-      <div onClick={firstLock}>
-        <Name firstName={firstName} />
-      </div>
-
-      <div onClick={secondLock}>
-        <Name secondName={secondName} />
-      </div>
+      <Display>
+        <Name firstLock={firstLock} firstName={firstName} />
+        <Name secondLock={secondLock} secondName={secondName} />
+      </Display>
 
       <button onClick={generateName}>
         Generate a new name!
       </button>
 
-    </SiteBkg>
+    </div>
   );
 }
 
