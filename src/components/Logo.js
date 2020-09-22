@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { theme } from "../globalStyles";
 
 export const LogoCont = styled.div`
-    margin: 0.25rem 1rem;
+    margin: 1rem;
 `
 export const Title = styled.h1`
-    font-family: ${theme.headingFont};
-    font-weight: 800;
-    font-size: 3rem;
     color: ${theme.headingFontColor};
+    font-family: ${theme.headingFont};
+    font-size: ${theme.h1FontSize};
+    font-weight: 800;
 `
 
 const Logo = () => {
