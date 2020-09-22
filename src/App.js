@@ -4,6 +4,7 @@ import "./App.css";
 import { Display } from "./globalStyles";
 import Logo from "./components/Logo";
 import Name from "./components/Name";
+import Button from "./components/Button";
 
 const App = () => {
 
@@ -53,9 +54,7 @@ const App = () => {
         <Name secondLock={secondLock} secondName={secondName} />
       </Display>
 
-      <button onClick={generateName}>
-        Generate a new name!
-      </button>
+      <Button generateName={generateName} />
 
     </div>
   );
