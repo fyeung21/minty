@@ -5,6 +5,11 @@ import { theme } from "../globalStyles";
 export const NameCont = styled.div`
     margin: 0.25rem 1rem;
     cursor: pointer;
+    // border: 1px solid black;
+    // height: 50px;
+    // width: 100px;
+    
+    // background: ${({ firstToggle, secondToggle }) => firstToggle || secondToggle ? "#000" : "none"}};
 `
 export const Text = styled.p`
     color: ${theme.bodyFontColor};
