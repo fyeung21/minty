@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/minty/static/css/main.42fd75fd.chunk.css",
+    "main.js": "/minty/static/js/main.3d0ae3f5.chunk.js",
+    "main.js.map": "/minty/static/js/main.3d0ae3f5.chunk.js.map",
+    "runtime-main.js": "/minty/static/js/runtime-main.5327b481.js",
+    "runtime-main.js.map": "/minty/static/js/runtime-main.5327b481.js.map",
+    "static/js/2.8229c878.chunk.js": "/minty/static/js/2.8229c878.chunk.js",
+    "static/js/2.8229c878.chunk.js.map": "/minty/static/js/2.8229c878.chunk.js.map",
+    "index.html": "/minty/index.html",
+    "precache-manifest.c6af244eefd45deca946c1f8187db91d.js": "/minty/precache-manifest.c6af244eefd45deca946c1f8187db91d.js",
+    "service-worker.js": "/minty/service-worker.js",
+    "static/css/main.42fd75fd.chunk.css.map": "/minty/static/css/main.42fd75fd.chunk.css.map",
+    "static/js/2.8229c878.chunk.js.LICENSE.txt": "/minty/static/js/2.8229c878.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5327b481.js",
+    "static/js/2.8229c878.chunk.js",
+    "static/css/main.42fd75fd.chunk.css",
+    "static/js/main.3d0ae3f5.chunk.js"
+  ]
+}
